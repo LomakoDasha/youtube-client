@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#fff;;
+}
+
+.main__clips {
+  list-style: none;
+  margin-top: 10%;
+  overflow: scroll;
+  /* overflow: hidden; */
+  padding: 0;
+  white-space: nowrap;
+}
+
+.main__clips__item {
+  overflow: hidden;
+  white-space: normal;
+  display: inline-block;
+  width:  calc(100vw/4.9);
+  height: calc(100vh/2);
+  border: 5px double #8C020C;
+  border-radius: 20px;
+  background-color: #D6D6D6;
+  margin:  calc(1em * 30 / 16);
+}
+
+.clip-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.clip-inner__image {
+  text-align: center;
+  width: 100%;
+  height: 200px;
+}
+
+.clip-inner__title {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #8C020C;
+  opacity: 0.8;
+  margin: calc(1em * 5 / 16) calc(1em * 10 / 16);
+  padding: calc(1em * 5 / 16) calc(1em * 10 / 16);
+}
+
+.clip-inner__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.clip-inner__channel {
+  background: url('http://s1.iconbird.com/ico/1212/267/w24h241355941024businessman3.png') no-repeat scroll 0 50%;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+  margin: calc(1em * 5 / 16) calc(1em * 15 / 16);
+  padding: calc(1em * 5 / 16) 0 calc(1em * 5 / 16) calc(1em * 60 / 16);
+}
+
+.clip-inner__date {
+  background: url('http://s1.iconbird.com/ico/0912/fugue/w24h241349011746calendarmonth.png') no-repeat scroll 0 50%;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+  margin: calc(1em * 5 / 16) calc(1em * 15 / 16);
+  padding: calc(1em * 5 / 16) 0 calc(1em * 5 / 16) calc(1em * 60 / 16);
+}
+
+.clip-inner__view-count {
+  background: url('http://s1.iconbird.com/ico/0912/fugue/w24h241349011761eye.png') no-repeat scroll 0 50%;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+  margin: calc(1em * 5 / 16) calc(1em * 15 / 16);
+  padding: calc(1em * 5 / 16) 0 calc(1em * 5 / 16) calc(1em * 60 / 16);
+}
+
+.clip-inner__description {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #000;
+  margin:  calc(1em * 5 / 16) calc(1em * 10 / 16);
+}
+
+@media only screen and (max-width: 1280px) {
+  .main__clips__item {
+    width:  calc(100vw/3.5);
+    margin:  calc(1em * 30 / 16);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main__clips__item {
+    width:  calc(100vw/2.4);
+    margin:  calc(1em * 30 / 16);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main__clips__item {
+    width:  calc(100vw/1.2);
+    margin:  calc(1em * 30 / 16);
+  }
+}
