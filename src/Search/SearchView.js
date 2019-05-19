@@ -10,21 +10,22 @@ export default class SearchView {
     content.innerHTML = SearchTemplate;
     document.body.appendChild(content);
 
-    // this.inputValue = document.getElementById('search-input').value;
-    this.inputValue = 'js';
+    const search = document.getElementById('search-button');
+    search.onclick = document.getElementById('search-input').value;
+    const output = search.onclick;
+
+    if (output !== 'null') {
+      this.inputValue = 'frontend';
+    } else {
+      this.inputValue = output;
+    }
     this.state = {
       url: `https://www.googleapis.com/youtube/v3/search?key=AIzaSyCTWC75i70moJLzyNh3tt4jzCljZcRkU8Y&type=video&part=snippet&maxResults=15&q=${this.inputValue}`,
     };
-    // eslint-disable-next-line no-console
-    console.log('Search this.state.inputValue', this.inputValue);
-    // eslint-disable-next-line no-console
-    console.log('Search this.state', this.state);
 
     const model = new SearchModel(this.state);
     const data = await model.getData();
 
-    // eslint-disable-next-line no-console
-    console.log('data', data);
     const app = new App(data);
 
     app.start();

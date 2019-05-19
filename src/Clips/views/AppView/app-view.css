@@ -14,6 +14,7 @@ body {
 }
 
 .main__clips__item {
+  cursor: grab;
   overflow: hidden;
   white-space: normal;
   display: inline-block;
@@ -23,6 +24,31 @@ body {
   border-radius: 20px;
   background-color: #D6D6D6;
   margin:  calc(1em * 30 / 16);
+}
+
+@keyframes rattle {
+  15% {
+    transform: rotateZ(5deg);
+  }
+  30% {
+    transform: rotateZ(3deg);
+  }
+  40% {
+    transform: rotateZ(1px);
+  }
+  50% {
+    transform: rotateZ(-1px);
+  }
+  65% {
+    transform: rotateZ(-3deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
+  }
+}
+
+.main__clips__item:hover {
+  animation: rattle 0.2s ease;
 }
 
 .clip-inner {
@@ -46,6 +72,11 @@ body {
   opacity: 0.8;
   margin: calc(1em * 5 / 16) calc(1em * 10 / 16);
   padding: calc(1em * 5 / 16) calc(1em * 10 / 16);
+}
+
+.clip-inner__title:hover {
+  background-color: #EA7272;
+  transition: 200ms ease-in-out;
 }
 
 .clip-inner__link {

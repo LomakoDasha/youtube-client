@@ -11,15 +11,13 @@ export default class AppModel {
         title: `${item.snippet.title}`,
         img: `${item.snippet.thumbnails.medium.url}`,
         channel: `${item.snippet.channelTitle}`,
-        date: `${item.snippet.publishedAt}`,
+        date: `${item.snippet.publishedAt.slice(0, 10)}`,
         view: `${item.statistics.viewCount}`,
         description: `${item.snippet.description}`,
       };
       arrObjects.push(arrObjects[i]);
     });
     const arrObjects2 = arrObjects.slice(0, 15);
-    // eslint-disable-next-line no-console
-    console.log('arrObjects', arrObjects2);
 
     return arrObjects2;
   }
@@ -29,11 +27,6 @@ export default class AppModel {
 
     const responce = await fetch(url);
     const data = await responce.json();
-
-    // eslint-disable-next-line no-console
-    console.log('url', url);
-    // eslint-disable-next-line no-console
-    console.log('this.id', data);
 
     return AppModel.extractData(data);
   }

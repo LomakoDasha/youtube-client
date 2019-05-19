@@ -13,11 +13,25 @@ describe('AppView.prototype.render', () => {
 
   it('Should be render correctly', () => {
     const context = {
-      titles: [
-        'Video about JS',
-        'Another video ...',
-        'I need more video',
-        'I need more video',
+      data: [
+        {
+          id: 'vhfxdukh',
+          title: 'title 1',
+          img: 'http://...',
+          channel: 'channel 1',
+          date: '2015-10-15',
+          view: '3456',
+          description: 'text',
+        },
+        {
+          id: 'vhfryjh',
+          title: 'title 2',
+          img: 'http://... .com',
+          channel: 'channel 2',
+          date: '2012-05-15',
+          view: '741',
+          description: 'text text',
+        },
       ],
     };
 

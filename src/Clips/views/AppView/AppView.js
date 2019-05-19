@@ -1,19 +1,11 @@
 export default class AppView {
   constructor(data) {
     this.data = data;
-
-    // eslint-disable-next-line no-console
-    console.log('view data', this.data);
-    // eslint-disable-next-line no-console
-    console.log('this.data.id', this.data[1].channel);
-    // eslint-disable-next-line no-console
-    console.log('data.length', this.data.length);
   }
 
   render() {
     const content = document.createElement('ul');
     content.className = 'main__clips';
-    // let array = this.data.length;
 
     content.innerHTML = this.data.map(item => `<li class="main__clips__item">
       <div class="clip-inner">

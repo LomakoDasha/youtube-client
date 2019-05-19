@@ -44,6 +44,10 @@
   justify-content: center;
 }
 
+.search-button:hover {
+  opacity: 1.2;
+}
+
 @media only screen and (max-width: 1280px) {
   .search-input {
     width: 70%;
