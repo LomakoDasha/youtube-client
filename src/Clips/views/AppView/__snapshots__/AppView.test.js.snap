@@ -3,7 +3,7 @@
 exports[`AppView.prototype.render Should be render correctly 1`] = `
 "<ul class=\\"main__clips\\"><li class=\\"main__clips__item\\">
       <div class=\\"clip-inner\\">
-        <img class=\\"clip-inner__image\\" src=\\"http://...\\" alt=\\"\\">
+        <img class=\\"clip-inner__image\\" src=\\"http://...\\" alt=\\"channel 1\\">
         <h2 class=\\"clip-inner__title\\"><a class=\\"clip-inner__link\\" href=\\"https://www.youtube.com/watch?v=vhfxdukh\\" target=\\"_blank\\"> title 1 </a></h2>
         <h3 class=\\"clip-inner__channel\\"> channel 1 </h3>
         <h3 class=\\"clip-inner__date\\"> 2015-10-15 </h3>
@@ -12,7 +12,7 @@ exports[`AppView.prototype.render Should be render correctly 1`] = `
       </div>
     </li>,<li class=\\"main__clips__item\\">
       <div class=\\"clip-inner\\">
-        <img class=\\"clip-inner__image\\" src=\\"http://... .com\\" alt=\\"\\">
+        <img class=\\"clip-inner__image\\" src=\\"http://... .com\\" alt=\\"channel 2\\">
         <h2 class=\\"clip-inner__title\\"><a class=\\"clip-inner__link\\" href=\\"https://www.youtube.com/watch?v=vhfryjh\\" target=\\"_blank\\"> title 2 </a></h2>
         <h3 class=\\"clip-inner__channel\\"> channel 2 </h3>
         <h3 class=\\"clip-inner__date\\"> 2012-05-15 </h3>
