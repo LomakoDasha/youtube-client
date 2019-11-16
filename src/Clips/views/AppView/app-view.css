@@ -124,23 +124,23 @@ body {
   padding: calc(1em * 10 / 16);
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 480px) {
   .main__clips__item {
-    width:  calc(100vw/3);
+    width:  calc(100vw/1);
     margin:  calc(1em * 30 / 16);
   }
 }
 
 @media only screen and (max-width: 800px) {
   .main__clips__item {
-    width:  calc(100vw/2.2);
+    width:  calc(100vw/2);
     margin:  calc(1em * 30 / 16);
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1280px) {
   .main__clips__item {
-    width:  calc(100vw/1.2);
+    width:  calc(100vw/3);
     margin:  calc(1em * 30 / 16);
   }
 }
