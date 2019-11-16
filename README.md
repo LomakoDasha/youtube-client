@@ -1,22 +1,23 @@
 # YouTube client
 
-[link to the app](https://LomakoDasha.github.io/youtube-client/)
+[link to the app](https://LomakoDasha.github.io/youtube-client/dist)
 
 Youtube-client - web app to view the information about youtube clips on user request.
 
 ### UI Examples:
 #### Default view:
+![youtube1](https://user-images.githubusercontent.com/42466442/68998196-4144ea80-08c0-11ea-805e-a4c825bd0822.png)
 
 #### Resized window
+![youtube2](https://user-images.githubusercontent.com/42466442/68998199-5752ab00-08c0-11ea-8b61-25d21aa958f9.png)
 
 #### Mobile version
+![youtube3](https://user-images.githubusercontent.com/42466442/68998203-65a0c700-08c0-11ea-8a6a-62bf1663f7df.png)
 
 ## Key points 
 - HTML rendering via JavaScript (a page is loaded without html tags inside document.body);
-- CSS preprocessors can be used; 
 - CSS3 Animations with Transitions & Transforms;
-- Use of jQuery and other frameworks and libs **is forbidden** (except for https://lodash.com/);
--  Used `.editorconfig`;
+- Used `.editorconfig`;
 - Used `eslint`;
 - Used `eslint-config-airbnb-base`;
 - JS code split into modules and assembled by Webpack. Used babel and babel-loader; 
