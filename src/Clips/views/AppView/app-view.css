@@ -1,14 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color:#fff;;
+  background-color:​#f0eadb;
 }
 
 .main__clips {
   list-style: none;
   margin-top: 10%;
-  overflow: scroll;
-  /* overflow: hidden; */
+  overflow-x: scroll;
   padding: 0;
   white-space: nowrap;
 }
@@ -115,23 +114,26 @@ body {
 }
 
 .clip-inner__description {
+  height: calc(1em * 80 / 16);
+  overflow: hidden;
   font-family: Arial, sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   color: #000;
   margin:  calc(1em * 5 / 16) calc(1em * 10 / 16);
+  padding: calc(1em * 10 / 16);
 }
 
 @media only screen and (max-width: 1280px) {
   .main__clips__item {
-    width:  calc(100vw/3.5);
+    width:  calc(100vw/3);
     margin:  calc(1em * 30 / 16);
   }
 }
 
 @media only screen and (max-width: 800px) {
   .main__clips__item {
-    width:  calc(100vw/2.4);
+    width:  calc(100vw/2.2);
     margin:  calc(1em * 30 / 16);
   }
 }

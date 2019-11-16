@@ -1,4 +1,4 @@
-import App from './Search/SearchView';
+import App from './Search/views/SearchView';
 
 const app = new App();
 
