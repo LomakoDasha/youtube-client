@@ -140,7 +140,7 @@ body {
 
 @media only screen and (max-width: 1280px) {
   .main__clips__item {
-    width:  calc(100vw/3);
+    width:  calc(100vw/3.4);
     margin:  calc(1em * 30 / 16);
   }
 }

@@ -8,6 +8,11 @@ export default class SearchView {
   }
 
   async search() {
+    const meta = document.createElement('meta');
+    meta.name = 'viewport';
+    meta.content = 'width=device-width, initial-scale=1.0';
+    document.getElementsByTagName('head')[0].appendChild(meta);
+
     const content = document.createElement('div');
     content.className = 'search-input-wrapper';
     content.innerHTML = SearchTemplate;
